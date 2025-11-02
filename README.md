@@ -1,3 +1,5 @@
+#REPORT
+- Data summary:
 | Dataset | Number of vertices | Number of edges | Structure type |
 | --- | --- | --- | --- |
 | Small1 | 8   | 7   | cyclic |
@@ -9,10 +11,6 @@
 | Large1 | 20  | 20  | DAG |
 | Large2 | 30  | 32  | cyclic |
 | Large3 | 50  | 49  | DAG |
-
-REPORT
-
-- Data summary:
 
 Weight model: edge.
 
@@ -127,4 +125,5 @@ Topological sorting (Kahn) works best on acyclic graphs, producing valid task ex
 DAG shortest and longest path algorithms reveal optimal and critical task chains for scheduling.
 
 In dense graphs, SCC detection is the main bottleneck, while in sparse graphs, path computation dominates.  
+
 Overall, use **SCC** to handle cycles, **Topological Sort** for ordering, and **DAG paths** for time or priority optimization.
