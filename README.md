@@ -1,5 +1,6 @@
 #REPORT
 - Data summary:
+  
 | Dataset | Number of vertices | Number of edges | Structure type |
 | --- | --- | --- | --- |
 | Small1 | 8   | 7   | cyclic |
@@ -127,3 +128,4 @@ DAG shortest and longest path algorithms reveal optimal and critical task chains
 In dense graphs, SCC detection is the main bottleneck, while in sparse graphs, path computation dominates.  
 
 Overall, use **SCC** to handle cycles, **Topological Sort** for ordering, and **DAG paths** for time or priority optimization.
+
